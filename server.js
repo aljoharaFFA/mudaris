@@ -9,7 +9,7 @@ const connectDB = require("./server/database/connection");
 
 dotenv.config({ path: "config.env" });
 const PORT = process.env.PORT || 3000;
-
+const hostname = '0.0.0.0';
 app.use(morgan("tiny"));
 app.use(express.json());
 
